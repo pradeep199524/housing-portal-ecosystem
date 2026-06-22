@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  # Task 1: Core Machine Learning Engine
+  housing-api:
+    build: ./housing-api
+    container_name: housing_api_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./housing-api/app:/code/app
+      - ./housing-api/House_Price_Dataset.xlsx:/code/House_Price_Dataset.xlsx
+    networks:
+      - portal-network
+
+  # Task 2 - App 1 Backend: Python FastAPI Gateway
+  backend-python:
+    build: ./backend-python
+    container_name: backend_python_container
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./backend-python:/code
+      # FIX: Mounts the dataset into this container to prevent mock data fallback
+      - ./housing-api/House_Price_Dataset.xlsx:/code/House_Price_Dataset.xlsx
+    networks:
+      - portal-network
+    depends_on:
+      - housing-api
+
+  # Task 2 - App 2 Backend: Java Spring Boot Service
+  backend-java:
+    build: ./backend-java
+    container_name: backend_java_container
+    ports:
+      - "8002:8002"
+    networks:
+      - portal-network
+    depends_on:
+      - housing-api
+
+  # Task 2: Unified Next.js Frontend Portal
+  portal-frontend:
+    build: ./portal-frontend
+    container_name: portal_frontend_container
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./portal-frontend:/app
+      - /app/.next
+      - /app/node_modules
+    networks:
+      - portal-network
+    depends_on:
+      - backend-python
+      - backend-java
+
+networks:
+  portal-network:
+    driver: bridge
