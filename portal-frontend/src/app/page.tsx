@@ -60,7 +60,7 @@ export default function HomePage() {
       <div className="text-center space-y-4">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-600">Housing Portal Ecosystem</p>
         <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">Unified Housing Analytics Dashboard</h1>
-        <p className="mx-auto max-w-2xl text-lg text-slate-500">Navigate the Python estimator and Java analytics experiences through a shared portal.</p>
+        <p className="mx-auto max-w-2xl text-lg text-slate-500">Input your property details for an instant, reliable market value estimate.</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -69,9 +69,9 @@ export default function HomePage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">App 1</p>
               <h2 className="mt-4 text-2xl font-bold text-slate-900">Property Value Estimator</h2>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-slate-600">Submit property features to the Python gateway and receive a model-based price prediction.</p>
+              <p className="mt-3 max-w-xl text-sm leading-6 text-slate-600">Enter your property details to generate an instant, reliable market valuation.</p>
             </div>
-            <span className="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-700">Python</span>
+            <span className="rounded-full bg-emerald-50 px-4 py-2 text-xs font-semibold text-emerald-700 whitespace-nowrap">AI-Powered</span>
           </div>
           <div className="mt-8 text-sm font-medium text-slate-700 group-hover:text-slate-900">Open Estimator →</div>
         </Link>
@@ -81,9 +81,9 @@ export default function HomePage() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">App 2</p>
               <h2 className="mt-4 text-2xl font-bold text-slate-900">Market Analytics Studio</h2>
-              <p className="mt-3 max-w-xl text-sm leading-6 text-slate-600">Review Java analytics metrics, export data, and run what-if simulations.</p>
+              <p className="mt-3 max-w-xl text-sm leading-6 text-slate-600">Access comprehensive market intelligence, export detailed reports, and perform predictive simulations.</p>
             </div>
-            <span className="rounded-full bg-sky-50 px-4 py-2 text-xs font-semibold text-sky-700">Java</span>
+            <span className="rounded-full bg-sky-50 px-4 py-2 text-xs font-semibold text-sky-700">Analytics</span>
           </div>
           <div className="mt-8 text-sm font-medium text-slate-700 group-hover:text-slate-900">Open Analytics →</div>
         </Link>

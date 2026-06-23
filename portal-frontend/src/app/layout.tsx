@@ -15,7 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto flex flex-col gap-4 px-4 py-5 md:flex-row md:items-center md:justify-between max-w-6xl">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-600">Housing Portal Ecosystem</p>
-              <p className="mt-1 text-sm text-slate-500">Unified access to Python estimator and Java market analytics.</p>
+              {/* Updated text below */}
+              <p className="mt-1 text-sm text-slate-500">Intelligent property estimation and advanced market analytics.</p>
             </div>
             <nav className="flex flex-wrap gap-3">
               <Link href="/" className="rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200">

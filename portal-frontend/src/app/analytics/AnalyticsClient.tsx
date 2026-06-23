@@ -164,7 +164,7 @@ export default function AnalyticsClient({ initialStats }:{ initialStats: MarketS
           <h1 className="text-3xl font-bold">Property Market Analysis</h1>
           <div className="flex items-center gap-2 mt-2">
             <div className={`h-2.5 w-2.5 rounded-full ${isOnline ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
-            <p className="text-sm text-gray-500">{isOnline ? 'Java Pipeline: Online' : 'Java Pipeline: Connecting...'}</p>
+            <p className="text-sm text-gray-500">{isOnline ? 'Analytics Service: Online' : 'Analytics Service: Connecting...'}</p>
           </div>
         </div>
         <div className="flex gap-2">
