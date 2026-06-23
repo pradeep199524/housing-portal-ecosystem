@@ -2,10 +2,10 @@
 
 A unified analytics and estimation platform that bridges the gap between high-performance market analysis and AI-driven property valuation.
 
-## 🚀 Quick Start (Docker)
+## 🏁 Getting Started
 
-If your environment is configured for containerized development, you can run the entire ecosystem with a single command:
+To get started with the project, clone the repository to your local machine:
 
 ```bash
-# Start all services (Backend + Frontend)
-docker-compose up --build
+git clone [https://github.com/pradeep199524/housing-portal-ecosystem.git](https://github.com/pradeep199524/housing-portal-ecosystem.git)
+cd housing-portal-ecosystem
